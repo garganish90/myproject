@@ -10,7 +10,7 @@ export function Add(){
     {
         e.preventDefault();
         try{
-            const response = await axios.post('http://localhost:3001/api/employees', {empNo,empName,empSal});
+            const response = await axios.post('https://anish-employee.onrender.com/api/employees', {empNo,empName,empSal});
             alert(response.data.message);
             response.data(alert("hello"));
         }
