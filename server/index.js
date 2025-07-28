@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
+const port = 'https://anish-frontend.onrender.com';
 app.use(express.json());
 app.use(cors());
 
@@ -102,6 +103,6 @@ const employeeSchema = new mongoose.Schema(
             res.status(500).json({message:error.message});
         }
     });
-    app.listen(3001,()=>{
-        console.log('server running on http://localhost:3001');
+    app.listen({port},()=>{
+        console.log('server running ');
     });
