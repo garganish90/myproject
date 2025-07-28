@@ -1,0 +1,73 @@
+#div1 {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 35px 30px;
+  background: linear-gradient(to bottom right, #ffc1cc, #ffd9e1);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 400px;
+  
+}
+
+.h1 {
+  text-align: center;
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 30px;
+}
+label {
+  font-weight: 600;
+  color: #444;
+  display: block;
+  margin-bottom: 6px;
+  padding-left: 60px;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 60%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  margin-left: 60px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #555;
+  box-shadow: 0 0 5px rgba(85, 85, 85, 0.3);
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #303f9f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #div1 {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .h1 {
+    font-size: 22px;
+  }
+}

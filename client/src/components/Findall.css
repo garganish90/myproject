@@ -1,0 +1,129 @@
+.findall-btn {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Heading */
+.findall-btn h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Form and Button */
+.findall-btn form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.findall-btn button {
+  background-color: #1abc9c;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.findall-btn button:hover {
+  background-color: #16a085;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background-color: #34495e;
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+th, td {
+  text-align: center;
+  padding: 14px 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+td[colspan='4'] {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-style: italic;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .findall-btn {
+    padding: 15px;
+  }
+
+  th, td {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .findall-btn h2 {
+    font-size: 1.6rem;
+  }
+
+  .findall-btn button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 15px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    font-size: 0.85rem;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #2c3e50;
+    flex-basis: 50%;
+  }
+}

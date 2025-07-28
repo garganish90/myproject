@@ -1,0 +1,118 @@
+/* Base styles */
+.card {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 50px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 60%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h4 {
+    margin-top: 30px;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #444;
+    margin: 5px 0;
+}
+
+hr {
+    margin: 10px auto 20px;
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+        padding: 30px;
+    }
+
+    input[type="text"] {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h4, p {
+        font-size: 0.95rem;
+    }
+
+    button {
+        width: 60%;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 95%;
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
