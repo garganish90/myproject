@@ -11,7 +11,7 @@ export function Getdata(){
         e.preventDefault();
         try
         {
-           const response = await axios.get(`http://localhost:3001/api/employees/${id}`);
+           const response = await axios.get(`https://anish-employee.onrender.com/api/employees/${id}`);
             setEmployee(response.data);
         }
         catch(err)
