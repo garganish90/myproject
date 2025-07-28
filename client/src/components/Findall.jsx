@@ -9,7 +9,7 @@ const[employees,setEmployees] = useState([]);
     {
         e.preventDefault();
         try{
-            const response = await axios.get('https://anish-employee.onrender.com1/api/employees');
+            const response = await axios.get('https://anish-employee.onrender.com/api/employees');
             setEmployees( response.data);
         }
         catch(err){
